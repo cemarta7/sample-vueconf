@@ -11,15 +11,13 @@ const cards = new ObservableArray(dataCards);
 <template>
 	<Page>
 		<StackLayout class="p-1">
-			<CollectionView :items="cards">
+			<CollectionView :items="cards" class="h-full" height="100%">
 				<template #default="{ item }">
-					<FlexboxLayout borderRadius="16" boxShadow="0 0 3 3 rgba(0,0,0,.12)"
-						:backgroundColor="item.backgroundColor"
-						class="flex-col justify-between h-full p-3 rounded-lg">
+					<StackLayout :backgroundColor="item.backgroundColor">
 						<Icon :icon="item.icon" class="text-4xl text-center" />
 						<Label :text="item.name" class="text-lg font-bold" />
 						<Label :text="item.number" class="text-lg font-bold" />
-					</FlexboxLayout>
+					</StackLayout>
 
 				</template>
 			</CollectionView>

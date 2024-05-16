@@ -7,4 +7,7 @@ import {createPinia} from "pinia";
 const pinia = createPinia();
 pinia.use(piniaPluginPersistedstate);
 
+import { useColorMode } from "@nativescript-use/vue";
+useColorMode({ initialValue: 'auto' })
+
 createApp(Home).use(pinia).use(CollectionView).start();

@@ -5,6 +5,9 @@ export const useSampleStore = defineStore('sample_store', {
 		someValue:"FooBar"
 	}),
 	getters: {
+		getSomeValue(state): string {
+			return state.someValue
+		},
 	},
 	actions: {
 	},
