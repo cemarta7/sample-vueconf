@@ -1,5 +1,5 @@
 <template>
-	<Page @loaded="onLoaded" :height="modalHeight" :width="modalWidth">
+	<Page @loaded="onLoaded">
 		<GridLayout rows="auto, auto, *">
 			<StackLayout row="0" height="100" width="100%" class="bg-[#12a296]" orientation="horizontal"
 				horizontalAlignment="center" verticalAlignment="center">
@@ -21,28 +21,14 @@
 import { Page, StackLayout, EventData, Screen, GridLayout } from '@nativescript/core';
 import { ref, computed } from 'nativescript-vue';
 import { useSampleStore } from '~/stores/sample';
-
 const store = useSampleStore();
-
 const someText = computed(() => store.getSomeValue);
-
-//const someText = ref('Value');
 const page = ref({});
-const modalHeight = ref(0)
-const modalWidth = ref(0)
-
 
 function onLoaded(args: EventData) {
-	const screenWidth = Screen.mainScreen.widthDIPs;
-	modalWidth.value = Math.round(screenWidth * 0.9);
-	const screenHeight = Screen.mainScreen.heightDIPs;
-	modalHeight.value = Math.round(screenHeight * 0.5);
-	console.log(modalHeight.value)
-	console.log(modalWidth.value)
 	page.value = args.object as Page;
 	console.log(someText.value);
 }
-
 
 function closeModal() {
 	console.log('Closing Modal');

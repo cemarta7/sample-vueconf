@@ -10,6 +10,9 @@ export const useSampleStore = defineStore('sample_store', {
 		},
 	},
 	actions: {
+		changeValue(value: string) {
+			this.someValue = value;
+		}
 	},
 });
 

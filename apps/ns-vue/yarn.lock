@@ -348,15 +348,15 @@
     "@nativescript-use/nativescript-orientation" "0.0.3"
     "@nativescript-use/nativescript-task" "^0.0.11"
 
-"@nativescript/android@8.5.0":
-  version "8.5.0"
-  resolved "https://registry.npmjs.org/@nativescript/android/-/android-8.5.0.tgz"
-  integrity sha512-HktiT5gWXdMxe4j6zoU1Zj2V5uxg67XG3TETOFg7m/PqAgWoti4czAa/VoKnHfk1FJ/zr+LWJTNxts/mGJ7DxA==
+"@nativescript/android@8.7.0":
+  version "8.7.0"
+  resolved "https://registry.yarnpkg.com/@nativescript/android/-/android-8.7.0.tgz#c246100cdf9d4f9f7e0072f9e6d2bcd0f8eb24e9"
+  integrity sha512-8NEbCfeKYdOZiile8M/RSDWWcRmGMt4og5qS4RXYGhDfurfqMef7+aSSfnmosRTEn4OIHWfAZ9mbpOZjo0ANeg==
 
-"@nativescript/core@~8.5.0":
-  version "8.5.9"
-  resolved "https://registry.npmjs.org/@nativescript/core/-/core-8.5.9.tgz"
-  integrity sha512-7dHa0cG6GZaBCcjPWhkcSAdvjVevgZN7+3frxO6Rv7c7e1lUDL7yJXy3WnhWZL+iCEG0lLWwQNXkeYsixHie6g==
+"@nativescript/core@~8.7.0":
+  version "8.7.2"
+  resolved "https://registry.yarnpkg.com/@nativescript/core/-/core-8.7.2.tgz#b8480fac7e85473b37fc2094b4a92d1f732b5ff7"
+  integrity sha512-b8uqBIrCrh1H4L9yKB1oRVYhXVMJ+gkQnLosvYcEkyVcvoXduT2hp6p18U6VpnrqQZla7KYvdxa2mar28mhElQ==
   dependencies:
     "@nativescript/hook" "~2.0.0"
     acorn "^8.7.0"
@@ -373,10 +373,10 @@
     glob "^7.1.0"
     mkdirp "^1.0.4"
 
-"@nativescript/ios@8.5.0":
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/@nativescript/ios/-/ios-8.5.0.tgz#5b4d391c767ae1aa46523d759becc4dd37f8183d"
-  integrity sha512-DigGcj5DASGErPCNUI6P/a5g7fWeRITYvEEgnh4AQBEALzJ9vm+tBFhCtIuJANG9ljj3Fd876rIJVlvTOD8meQ==
+"@nativescript/ios@8.7.0":
+  version "8.7.0"
+  resolved "https://registry.yarnpkg.com/@nativescript/ios/-/ios-8.7.0.tgz#5cc8f293849299833ec6833fb48aa5f3f1f12690"
+  integrity sha512-vk761r5lCZowi5syKj5NeyyaHGTCL/ZPk1lGUmcbJjclqOSt1XAz0fL7oRqUagRX7WNDsd3lUL7GisltHJSCsg==
 
 "@nativescript/tailwind@^2.0.1":
   version "2.1.0"
@@ -386,28 +386,23 @@
     "@csstools/postcss-is-pseudo-class" "4.0.4"
     "@hookun/parse-animation-shorthand" "^0.1.4"
 
-"@nativescript/types-android@^8.7.0":
+"@nativescript/types-android@8.7.0", "@nativescript/types-android@^8.7.0":
   version "8.7.0"
-  resolved "https://registry.npmjs.org/@nativescript/types-android/-/types-android-8.7.0.tgz"
+  resolved "https://registry.yarnpkg.com/@nativescript/types-android/-/types-android-8.7.0.tgz#5b8a5ffccd921ebaebe3ce0899438a70fc828933"
   integrity sha512-ykrhxjEf0/ECyI6dtUEkQZhHLCkKeVZRwPuw658zTGgfXZ4ocaQ5EaCCCLLXy92/VepT0ynLo+MDaXEwAfm7Qg==
 
-"@nativescript/types-android@~8.5.0":
-  version "8.5.0"
-  resolved "https://registry.npmjs.org/@nativescript/types-android/-/types-android-8.5.0.tgz"
-  integrity sha512-3jBIF5JOwyKbjIUypyTkBHaJACRhGz8SN7ArVzbXV2RP9qLSx3+w1Y9lu4Ak9TN+4O6p7Y6lMtgNW6pt8dE6xQ==
+"@nativescript/types-ios@8.7.0":
+  version "8.7.0"
+  resolved "https://registry.yarnpkg.com/@nativescript/types-ios/-/types-ios-8.7.0.tgz#6152402f8af62b83bf4d6613b198da0e3d8c16be"
+  integrity sha512-g/tQY67SvIvPex35+Pi5OsNBLmevdYGMJKtCdPRMVcRDJOCNdSMVPkuQ7v8B6IQG7oHEJ6njACAY+jaFw1d58w==
 
-"@nativescript/types-ios@~8.5.0":
-  version "8.5.0"
-  resolved "https://registry.npmjs.org/@nativescript/types-ios/-/types-ios-8.5.0.tgz"
-  integrity sha512-MAdp+mMTLTVG7NIA7/o0Y6Rz8cOSuhA/fhX4XIX7zq085Tl6a0DdrRV+NN1ypSRY/XWZR3x9hAySY5O7IJRfiA==
-
-"@nativescript/types@~8.5.0":
-  version "8.5.0"
-  resolved "https://registry.npmjs.org/@nativescript/types/-/types-8.5.0.tgz"
-  integrity sha512-aYDAhwNttjSgqp8VWxz8iodRCtrllS3bS8hIHiILnfH6UJ/MgceR99hc3f+jCZimOyi/0YxieOuFE+ftLDkRTA==
+"@nativescript/types@~8.7.0":
+  version "8.7.0"
+  resolved "https://registry.yarnpkg.com/@nativescript/types/-/types-8.7.0.tgz#2d4bf8bb9386c08a18ccba759a7cc691b2179eb6"
+  integrity sha512-ipC/sQz6Bic3dvgx1Z4Ec18Mn0dXB1WvZ9fxdtJmwjTtOPr1poRLy6TVwWw9EPasPVmwiZTzFD5dp09PpT02AQ==
   dependencies:
-    "@nativescript/types-android" "~8.5.0"
-    "@nativescript/types-ios" "~8.5.0"
+    "@nativescript/types-android" "8.7.0"
+    "@nativescript/types-ios" "8.7.0"
 
 "@nativescript/webpack@~5.0.0":
   version "5.0.21"

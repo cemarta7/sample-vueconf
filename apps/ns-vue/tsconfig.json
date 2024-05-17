@@ -22,7 +22,12 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "allowJs": true
+  },
+    "vueCompilerOptions": {
+    "target": 3,
+    "lib": "nativescript-vue"
   },
   "include": ["src", "types"],
   "exclude": ["node_modules", "platforms"]

@@ -5,33 +5,36 @@ import Cards from "./Cards.vue";
 import SimpleModal from "./SimpleModal.vue";
 import { useSampleStore } from '~/stores/sample';
 import { useColorMode } from '@nativescript-use/vue'
-const { system, schema, theme, modes } = useColorMode();
+const { schema } = useColorMode();
 
 const store = useSampleStore();
 
-const name = ref('');
+const firstname = ref('');
+
 const check = ref(true);
 
 function testClick() {
   console.log("testClick");
-  $showModal(SimpleModal, {
-    fullscreen: false,
-    animated: true,
-    stretched: true,
-    transition: {
-      name: "slideBottom",
-      duration: 500,
-      curve: "easeIn"
-    },
-  });
+  store.changeValue('Some Value new');
+  // $showModal(SimpleModal, {
+  //   fullscreen: true,
+  //   animated: true,
+  //   stretched: true,
+  //   transition: {
+  //     name: "slideTop",
+  //     duration: 1000,
+  //     curve: "spring"
+  //   },
+  // });
 }
 
 function changeOnCheck() {
   console.log("changeCheck");
+
   if (check.value) {
-    schema.value = 'dark';
-  } else {
     schema.value = 'light';
+  } else {
+    schema.value = 'dark';
   }
 
 }
@@ -39,7 +42,6 @@ function changeOnCheck() {
 </script>
 <template>
   <Frame>
-
     <Page>
       <StackLayout class="p-1">
         <Label>
@@ -48,17 +50,17 @@ function changeOnCheck() {
         <Button @tap="testClick()" class="my-1 text-white bg-blue-500 rounded" text="Test" />
         <Button @tap="$navigateTo(Cards)" class="my-1 text-white bg-red-500 rounded" text="Cards" />
         <StackLayout>
-          <Label text="First Name" />
-          <TextField v-model="name" />
-          <Label :text="name" />
-          <Switch v-model="check" @checkedChange="changeOnCheck" />
+          <Label text="Frist Name" />
+          <TextField v-model="firstname" />
+          <StackLayout orientaion="horizontal">
+            <Label text="Switch" />
+            <Switch v-model="check" @checkedChange="changeOnCheck" />
+          </StackLayout>
           <Label :text="check" />
+
         </StackLayout>
       </StackLayout>
-
-
     </Page>
-
   </Frame>
 </template>
 
